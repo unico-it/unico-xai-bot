@@ -20,7 +20,7 @@ and post it to X UNICO official account.
    cp .env.example .env
    ```
 
-4. **Replace `YOUR_AGENT_NAME` with your agent**
+4. **Replace `YOUR_AGENT_ID` with your agent**
 
 5. **Point to production (Optional):** The script by default points to staging because our agent is in a staging account.
 We recommend to use this environment only for develop purposes, and when all the changes are implemented, point to production
