@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "650b7cb9d05c7d5830614398c7c9229aef9a77a2a8f62cf05301a92b9b7c18fd"
+            "sha256": "bc728d4cf97890c3e72d9520655db39a81a1be11899bcd5c196fe150c21fe307"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -140,11 +140,11 @@
         },
         "requests": {
             "hashes": [
-                "sha256:55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760",
-                "sha256:70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"
+                "sha256:27babd3cda2a6d50b30443204ee89830707d396671944c998b5975b031ac2b2c",
+                "sha256:27d0316682c8a29834d3264820024b62a36942083d52caf2f14c0591336d3422"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==2.32.3"
+            "version": "==2.32.4"
         },
         "requests-oauthlib": {
             "hashes": [
@@ -163,9 +163,14 @@
             "markers": "python_version >= '3.9'",
             "version": "==4.15.0"
         },
-        "unico": {
-            "git": "https://github.com/unico-it/unico-python.git",
-            "ref": "4ebcc10cf68672035e42c724f561e4d2aa6cb804"
+        "unico-python": {
+            "hashes": [
+                "sha256:81fc0bbee746aee6f93691f9abfe687c533e1529a0d52b24d733163a300c402b",
+                "sha256:a09cd06c909264868595b106fec23df11b42c7b9d244be1a5e0777e5f62bfa8b"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.11'",
+            "version": "==0.1.0"
         },
         "urllib3": {
             "hashes": [

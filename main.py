@@ -1,11 +1,11 @@
 import os
 
 import tweepy
-import unico
+from unico import Client
 
 
 def generate_tweet():
-    unico_client = unico.Client(api_key=os.environ['UNICO_API_KEY'], base_url="https://staging.theunico.it/api")
+    unico_client = Client(api_key=os.environ['UNICO_API_KEY'], base_url="https://staging.theunico.it/api")
     x_client = tweepy.Client(
         consumer_key=os.environ['X_API_KEY'],
         consumer_secret=os.environ['X_API_KEY_SECRET'],
@@ -18,7 +18,7 @@ def generate_tweet():
     tweet_texts = [tweet.text for tweet in tweets.data]
 
     prompt = "Based on the following tweets generate a post to promote UNICO: " + " ".join(tweet_texts)
-    result = unico_client.agent(os.environ['UNICO_AGENT_ID']).completions.create(prompt)
+    result = unico_client.agents.completions.create(os.environ['UNICO_AGENT_ID'], prompt)
 
     x_client.create_tweet(text=result['text'])
 
